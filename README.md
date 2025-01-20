@@ -1,8 +1,8 @@
 # Meeting Minutes Segmentation Tool
 
 ## Project Overview
-You are tasked with building a component that helps civil servants efficiently break up meeting transcripts into sub-transcripts. The component's primary function is to split a meeting transcript into smaller segments based on predefined meeting sections/items. This is a task that is complex for low-tech users so your aim is to build a component that is easy to use and understand.
-
+You are tasked with building a component that helps civil servants efficiently break up a meeting transcript into segments of the meeting each corresponding to a specific item/section from the meeting. The aim is to make it easy for users to go through the transcript and decide which block of dialogue corresponds to the start of each item/section. The output set of transcript segments will be used for a downstream minuting task (which you don't need to worry about).
+ 
 ### Core Requirements
 - Create a component that accepts:
   - A meeting transcript (input)
@@ -10,9 +10,8 @@ You are tasked with building a component that helps civil servants efficiently b
   - Returns segmented sub-transcripts corresponding to each section
 
 ### Key Focus Areas
-- Design an intuitive user interface suitable for non-technical users
-- Implement a clear and straightforward user experience
-- Create a solution that makes the segmentation process efficient and accurate
+- Design an intuitive user interface that is understandable by users with low technical literacy
+- (Optionally) Add human-in-the-loop features that leverage a dummy AI prediction function to assist users in more quickly finding the start of a section.
 
 ### Available Resources
 - Project Structure:
@@ -25,12 +24,11 @@ You are tasked with building a component that helps civil servants efficiently b
   - Meeting transcript: `data/care_assessment_transcript.json`
   - Meeting sections: `data/care_assessment_sections.json`
 
-- AI Prediction Helper:
+- Dummy AI Prediction Helper:
   - Location: `app/utils.ts`
   - Purpose: Assists users in predicting section start points within the transcript
-  - Implementation: Currently includes a dummy implementation that randomly predicts section start points
+  - Implementation: Currently includes a dummy implementation that randomly predicts section start points (do not modify the implementation and focus how best to use it in your component)
   - Usage: Optional - you may choose to incorporate this in your solution
-  - Note: Please focus on how best to build a 'human in the loop' component for meeting transcript segmentation using the dummy AI prediction helper function and just assume that the AI prediction function is real.
 
 ### Project Setup
 
