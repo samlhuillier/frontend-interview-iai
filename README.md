@@ -1,31 +1,46 @@
+# Meeting Minutes Segmentation Tool
 
-You are tasked with building a component that is designed for a civil servant who is tasked with producing a minute of a meeting. 
+## Project Overview
+You are tasked with building a component that helps civil servants efficiently process meeting transcripts. The component's primary function is to split a meeting transcript into smaller segments based on predefined meeting sections/items, which is the first step in creating formal meeting minutes.
 
-The function of the component is to do the first step in downstream task of producing a minute of a meeting. 
+### Core Requirements
+- Create a component that accepts:
+  - A meeting transcript (input)
+  - A list of meeting sections/items (input)
+  - Returns segmented sub-transcripts corresponding to each section
 
-The first step is to split the transcript of the meeting into 'sub transcripts' corresponding to specific sections/items of the meeting. 
+### Key Focus Areas
+- Design an intuitive user interface suitable for non-technical users
+- Implement a clear and straightforward user experience
+- Create a solution that makes the segmentation process efficient and accurate
 
-The component should take in a transcript object and a list of sections/items and return a list of sub transcripts.
+### Available Resources
+- Sample Data:
+  - Meeting transcript: `data/care_assessment_transcript.json`
+  - Meeting sections: `data/care_assessment_sections.json`
+- AI Prediction Helper:
+  - Location: `app/utils.ts`
+  - Purpose: Assists users in predicting section start points within the transcript
+  - Implementation: Currently includes a dummy implementation that randomly predicts section start points
+  - Usage: Optional - you may choose to incorporate this in your solution
+  - Note: Do not modify the dummy AI prediction helper function. Please focus on the UI/UX and the logic of the component.
 
-It should 
+### Project Setup
 
+1. Clone the repository
+2. Install dependencies using your preferred package manager:
 
-Some things you should focus on:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
 
-- Think about a nice user interface and experience that makes it easy to understand and use (for low-tech users)
-
-
-Dummy data is in the `data/care_assessment_transcript.json` file and the sections are in the `data/care_assessment_sections.json` file.
-
-There is also a dummy implementation of the AI prediction function in the `app/utils.ts` file. This is meant to be an AI prediction function that is meant to be used by the user to do human in the loop prediction of the section start. You may optionally use this function.
-
-No need to write any tests.
-
-
-## Getting Started
-
-First, run the development server:
-
+3. Start the development server:
 ```bash
 npm run dev
 # or
@@ -35,4 +50,6 @@ pnpm dev
 # or
 bun dev
 ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view the application in the browser.
 
