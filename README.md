@@ -1,9 +1,7 @@
 # Meeting Minutes Segmentation Tool
 
 ## Project Overview
-You are tasked with building a component that helps civil servants efficiently break up meeting transcripts into sub-transcripts. The component's primary function is to split a meeting transcript into smaller segments based on predefined meeting sections/items, which is the first step in creating formal meeting minutes.
-
-This is a task that is complex for low-tech users so your aim is to build a component that is easy to use and understand.
+You are tasked with building a component that helps civil servants efficiently break up meeting transcripts into sub-transcripts. The component's primary function is to split a meeting transcript into smaller segments based on predefined meeting sections/items. This is a task that is complex for low-tech users so your aim is to build a component that is easy to use and understand.
 
 ### Core Requirements
 - Create a component that accepts:
