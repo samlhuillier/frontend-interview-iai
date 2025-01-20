@@ -1,4 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+You are tasked with building a component that is designed for a civil servant who is tasked with producing a minute of a meeting. 
+
+The function of the component is to do the first step in downstream task of producing a minute of a meeting. 
+
+The first step is to split the transcript of the meeting into 'sub transcripts' corresponding to specific sections/items of the meeting. 
+
+The component should take in a transcript object and a list of sections/items and return a list of sub transcripts.
+
+It should 
+
+
+Some things you should focus on:
+
+- Think about a nice user interface and experience that makes it easy to understand and use (for low-tech users)
+
+
+Dummy data is in the `data/care_assessment_transcript.json` file and the sections are in the `data/care_assessment_sections.json` file.
+
+There is also a dummy implementation of the AI prediction function in the `app/utils.ts` file. This is meant to be an AI prediction function that is meant to be used by the user to do human in the loop prediction of the section start. You may optionally use this function.
+
+No need to write any tests.
+
 
 ## Getting Started
 
@@ -14,23 +36,3 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
