@@ -1,7 +1,7 @@
 # Meeting Minutes Segmentation Tool
 
 ## Project Overview
-You are tasked with building a NextJS component that helps civil servants break up a meeting transcript into segments of the meeting each corresponding to a specific item/section from the meeting. The aim is to make it easy for users to go through the transcript and decide which block of dialogue corresponds to the start of each item/section. The output set of transcript segments will be used for a downstream minuting task (which you don't need to worry about).
+You are tasked with building a NextJS component that helps civil servants break up a transcript of a meeting into segments each corresponding to a specific item/section from the meeting. The aim is to make it easy for users to go through the meetingtranscript and decide which block of dialogue corresponds to the start of each item/section. The output set of transcript segments will be used for a downstream minuting task (which you don't need to worry about).
  
 ### Core Requirements
 - Create a component that accepts:
